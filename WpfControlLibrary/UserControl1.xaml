@@ -16,15 +16,19 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </UserControl.Resources>
-    <Grid>
-        <Button Content="My Button" con:ImageButton.Image="/WpfControlLibrary;component/img/Icons/dark/appbar.3d.obj.png" Height="50" Style="{StaticResource ButtonIcon}" Margin="215,145,405,254.6"/>
-        <Button Content="My Button" Height="50" Style="{StaticResource ButtonSimple}" Margin="215,230,405,169.6"/>
-        <StackPanel HorizontalAlignment="Left" Margin="10,0,0,-0.4" Width="145">
-            <RadioButton  Content="My Button" con:ImageButton.Image="/WpfControlLibrary;component/img/Icons/dark/appbar.3d.obj.png" Height="30" VerticalAlignment="Center" Style="{StaticResource ToggleButton}" />
-            <RadioButton Content="My Button" Height="30" VerticalAlignment="Center" Style="{StaticResource ToggleButton}" />
-            <RadioButton Content="My Button" Height="30" VerticalAlignment="Center" Style="{StaticResource ToggleButton}" />
-            <RadioButton Content="My Button" Height="30" VerticalAlignment="Center" Style="{StaticResource ToggleButton}" />
+    <Grid Background="Beige">
+        <Button  Content="My Button" con:ImageButton.Image="/WpfControlLibrary;component/img/Icons/dark/appbar.3d.obj.png" Height="50" Style="{StaticResource BigButtonIcon}" Margin="10,10,610,0" VerticalAlignment="Top"/>
+        <StackPanel HorizontalAlignment="Left" Margin="10,90,0,-0.4" Width="180">
+            <RadioButton Content="My Button" con:ImageButton.Image="/WpfControlLibrary;component/img/Icons/dark/appbar.3d.obj.png" Height="30" VerticalAlignment="Center" Style="{StaticResource ToggleButton}" />
+            <RadioButton Content="My Button" con:ImageButton.Image="/WpfControlLibrary;component/img/Icons/dark/appbar.3d.obj.png" Height="30" VerticalAlignment="Center" Style="{StaticResource ToggleButton}" />
+            <RadioButton Content="My Button" con:ImageButton.Image="/WpfControlLibrary;component/img/Icons/dark/appbar.3d.obj.png" Height="30" VerticalAlignment="Center" Style="{StaticResource ToggleButton}" />
+            <RadioButton Content="My Button" con:ImageButton.Image="/WpfControlLibrary;component/img/Icons/dark/appbar.3d.obj.png" Height="30" VerticalAlignment="Center" Style="{StaticResource ToggleButton}" />
         </StackPanel>
+        <Controles:SearchTextBox HorizontalAlignment="Left" Height="34" Margin="295,65,0,0" VerticalAlignment="Top" Width="100"/>
+        <Controles:DropFilesControl HorizontalAlignment="Left" Margin="10,340,0,0" Width="100" Height="100" VerticalAlignment="Top"/>
+        <Grid HorizontalAlignment="Left" Height="100" Margin="315,190,0,0" VerticalAlignment="Top" Width="100">
+            <Border Style="{StaticResource BorderSimple}"/>
+        </Grid>
 
 
     </Grid>

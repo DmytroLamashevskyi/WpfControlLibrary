@@ -8,11 +8,9 @@
         xmlns:Controles="clr-namespace:WpfControlLibrary.Controles;assembly=WpfControlLibrary" 
         x:Class="DemoApp.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <WpfControlLibrary:UserControl1 HorizontalAlignment="Left" Height="200" Margin="65,130,0,0" VerticalAlignment="Top" Width="365"/>
-        <Button Style="{StaticResource ButtonIcon}" con:ImageButton.Image="pack://application:,,,/WpfControlLibrary;component/img/Icons/dark/appbar.3d.obj.png"  Content="Button" HorizontalAlignment="Left" Margin="200,30,0,0" VerticalAlignment="Top" Width="75"/>
-        <Controles:DropFilesControl HorizontalAlignment="Left" Height="100" Margin="584,215,0,0" VerticalAlignment="Top" Width="100"/>
-        <Controles:SearchTextBox HorizontalAlignment="Left" Height="25" Margin="95,325,0,0" VerticalAlignment="Top" Width="100"/>
+        Title="MainWindow"  Height="450" Width="800">
+    <Grid  >
+        <Button  Content="My Button" con:ImageButton.Image="/WpfControlLibrary;component/img/Icons/dark/appbar.3d.obj.png" Height="50" Style="{StaticResource BigButtonIcon}"   VerticalAlignment="Top"/>
+        <Controles:SearchTextBox HorizontalAlignment="Left" Height="20" Margin="195,85,0,0" VerticalAlignment="Top" Width="100"/>
     </Grid>
 </Window>
