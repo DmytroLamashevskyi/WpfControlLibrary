@@ -1,0 +1,31 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:con="clr-namespace:WpfControlLibrary.Converters"
+             xmlns:local="clr-namespace:WpfControlLibrary"
+             xmlns:Controles="clr-namespace:WpfControlLibrary.Controles" 
+            x:Class="WpfControlLibrary.UserControl1"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/WpfControlLibrary;component/Styles/Dark.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Button Content="My Button" con:ImageButton.Image="/WpfControlLibrary;component/img/Icons/dark/appbar.3d.obj.png" Height="50" Style="{StaticResource ButtonIcon}" Margin="215,145,405,254.6"/>
+        <Button Content="My Button" Height="50" Style="{StaticResource ButtonSimple}" Margin="215,230,405,169.6"/>
+        <StackPanel HorizontalAlignment="Left" Margin="10,0,0,-0.4" Width="145">
+            <RadioButton  Content="My Button" con:ImageButton.Image="/WpfControlLibrary;component/img/Icons/dark/appbar.3d.obj.png" Height="30" VerticalAlignment="Center" Style="{StaticResource ToggleButton}" />
+            <RadioButton Content="My Button" Height="30" VerticalAlignment="Center" Style="{StaticResource ToggleButton}" />
+            <RadioButton Content="My Button" Height="30" VerticalAlignment="Center" Style="{StaticResource ToggleButton}" />
+            <RadioButton Content="My Button" Height="30" VerticalAlignment="Center" Style="{StaticResource ToggleButton}" />
+        </StackPanel>
+
+
+    </Grid>
+</UserControl>
